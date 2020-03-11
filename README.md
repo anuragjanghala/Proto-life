@@ -53,7 +53,8 @@ these commands will create server and clients for the network
 
 ## Example
 For server and client running on the same system
-***Server classserver_1***
+
+**Server classserver_1**
 > $ python ctrlP2P.py --name=classserver_1 --port=8800
 <pre>
 Server listening to port: 9900 ...
@@ -61,7 +62,7 @@ Chat server: got connection 6 from ('127.0.0.1', 52630)
 Chat server: got connection 7 from ('127.0.0.1', 52636)
 <pre>
 
-***Client student 0***
+**Client student 0**
 > $ python ctrlP2P.py --name=student0 --port=8800
 <pre>
 Now connected to chat server@ port 9900
@@ -75,7 +76,7 @@ To exit from Private mode type (-1) twice while inside private
 [student0@127.0.0.1]> 
 </pre>
 
-***client student 1***
+**client student 1**
 > $ python ctrlP2P.py --name=student1 --port=8800
 <pre>
 Now connected to chat server@ port 9900
