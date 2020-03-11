@@ -2,7 +2,7 @@
 # Controlled-client-Server-Client-Message-Sender
 
 ## About
-
+Here, in this network student can record their presence in any activity inside trinity using IOT based device and mobile application, device will scan the data from mobile app of a student and then communicate with the class server and trinity server to verify that student data is right or not tampered on database and to store that presence of student inside a blockchain based database on teachers block. So here I am providing the details on how devices will communicate with each other to send, verify and store that information.Also, I am only providing the communication between students as a client using IOT device and Class server.
 ## Environment
 It will run only on Linux and MAC
 ## Requirements
