@@ -87,3 +87,71 @@ To exit from Private mode type (-1) twice while inside private
 
 [student1@127.0.0.1]> 
 </pre>
+
+### working with sending connection message from a student to another student (but not to all students)
+assuming that server is running and three clients is connected by using the given commands in example above
+
+Now if you want to send message to all students to verify its presence type msg `hi to all` from student0 client
+<pre>
+
+[student0@127.0.0.1]> hi to all
+
+</pre>
+
+then in student1 and student2 will show the recieved message:
+
+**in student1**
+<pre>
+[student1@127.0.0.1]> got message from [student0 @ 127.0.0.1]>> hi to all
+</pre>
+**in student2**
+<pre>
+[student2@127.0.0.1]> got message from [student0 @ 127.0.0.1]>> hi to all
+</pre>
+
+Now if you want to work on private mode functionality which will send message to the selected client student.
+
+here is the example if student0 sends private message to student1: type `private` 
+then in student0 client enter the client target no. type `1` for student1 
+
+**in client student 0**
+<pre>
+[student0@127.0.0.1]> private
+---------------Entering private mode-----------------
+[student0@127.0.0.1]> 1
+[student0@127.0.0.1]> hello to student1
+</pre>
+
+student1 will recieve that message but student2 wont:
+
+**in client student 1**
+<pre>
+[student1@127.0.0.1]> got message from [student0 @ 127.0.0.1]>> hello to student1
+</pre>
+
+**in client student 2**
+<pre>
+[student2@127.0.0.1]> 
+</pre>
+
+here in the upper block we can see that student2 does not recieve any message as student0 asked for private message to student1.
+
+In student0 client, it will stay in private mode to send another message to any other client via server untill we command to close the private mode.
+
+**for closing private mode in student0**
+<pre>
+[student0@127.0.0.1]> -1
+----------------------Exiting private mode----------------
+[student0@127.0.0.1]> -1
+</pre>
+
+**Now for closing the each client**
+> [student0@127.0.0.1]> ^C 
+
+press ctrl+c and then press `enter`
+
+**Now for closing server**
+> [student0@127.0.0.1]> ^C 
+
+press ctrl+c and then press `enter`
+
