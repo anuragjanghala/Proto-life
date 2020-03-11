@@ -60,7 +60,7 @@ For server and client running on the same system
 Server listening to port: 9900 ...
 Chat server: got connection 6 from ('127.0.0.1', 52630)
 Chat server: got connection 7 from ('127.0.0.1', 52636)
-<pre>
+</pre>
 
 **Client student 0**
 > $ python ctrlP2P.py --name=student0 --port=8800
