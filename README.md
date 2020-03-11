@@ -16,14 +16,12 @@ and also download pip using:
 $ pip install pip
 ```
 Now, You can doenload python libraries using pip:
+
 for socket:
 ```shell
 $ pip install socket
 ```
-for select:
-```shell
-$ pip install select
-```
+
 for termcolor:
 ```shell
 $ pip install termcolor
@@ -41,11 +39,12 @@ Once you download the file
 ctrlP2P.py
 ```
 , run by typing the following commands in your terminal:
-####for Class Server
+
+#### for Class Server
 ```shell
 $ python ctrlP2P.py --name=classserver_1 --port=8800
 ```
-####for Student Client
+#### for Student Client
 ```shell
 $ python ctrlP2P.py --name=classserver_1 --port=8800
 ```
